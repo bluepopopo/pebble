@@ -33,10 +33,15 @@
       <%-- uncomment this to have "about the author" information, which is useful for a multi-contributor blog
       <sidebar:aboutAuthor/>
       --%>
+      <%--
       <sidebar:subscriptions/>
+      --%>
       <sidebar:navigation/>
       <sidebar:search/>
+      <%--       
       <sidebar:archivesByMonth/>
+      --%>
+      <sidebar:tagCloud/>
       <sidebar:categories/>
       <sidebar:tagCloud/>
       <sidebar:recentBlogEntries/>
@@ -45,7 +50,9 @@
       <%-- the following is an example of the feed component that lets you aggregate a RSS/Atom feed into your blog
       <sidebar:feed name="del.icio.us" url="http://del.icio.us/rss/simongbrown" maxEntries="3" showBody="true" truncateBody="true"/>
       --%>
+      <%--
       <sidebar:loginForm/>
+      --%>
     </div>
 
     <%-- the main area into which content gets rendered --%>
@@ -55,7 +62,15 @@
 
     <%-- the footer, containing the "powered by" link --%>
     <div id="footer">
-      <template:poweredByPebble/>
+      &copy; 2015 taoxiaobao.me 
+	  Powered By Pebble 
+	  <a href="https://github.com/bluepopopo/pebble"> <span class="fa-stack fa-lg"> <i
+							class="fa fa-circle fa-stack-2x"></i> <i
+							class="fa fa-github fa-stack-1x fa-inverse"></i>
+					</span>
+				</a>
+      
+      <%--
       <pebble:isNotAuthenticated>
       |
       <a href="${url:rewrite(blogUrl)}login.secureaction?redirectUrl=${url:urlEncode(originalUri)}"><fmt:message key="login.title" /></a>
@@ -64,6 +79,7 @@
       |
       <a href="${url:rewrite(blogUrl)}logout.action?redirectUrl=${blogUrl}">Logout</a>
       </pebble:isAuthenticated>
+      --%>
     </div>
 
   </div>
